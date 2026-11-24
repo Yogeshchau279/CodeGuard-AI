@@ -4,8 +4,7 @@ const cors = require("cors");
 const helmet = require("helmet");
 const rateLimit = require("express-rate-limit");
 const mongoose = require("mongoose");
-const dns = require("node:dns");
-dns.setServers(["8.8.8.8", "1.1.1.1"]);
+
 
 const authRoutes = require("./routes/auth");
 const reviewRoutes = require("./routes/reviews");
